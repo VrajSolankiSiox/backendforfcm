@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "596139174578",
+    "project_id": "haulgaurddriver",
+    "storage_bucket": "haulgaurddriver.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596139174578:android:b12236ab51296f792137ab",
+        "android_client_info": {
+          "package_name": "com.driverapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsP2IPucr7g66N-pCFuH67SKwDNKXG5zQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
