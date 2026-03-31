@@ -14,6 +14,7 @@ app.use(express.json());
 app.use('/api/sendnotification', require('./sendnotification'));
 app.use('/api/auth', require('./auth'));
 app.use('/api/fcm-token', require('./fcmToken'));
+app.use('/api/location', require('./location'));
 
 app.get('/', (req, res) => {
   res.send('API Running');

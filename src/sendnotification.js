@@ -15,9 +15,6 @@ async function sendNotification({ token, title, body, data }) {
     data: data ?? {},
     android: {
       priority: 'high',
-      notification: {
-        channelId: 'default',
-      },
     },
     apns: {
       headers: {
@@ -37,6 +34,10 @@ router.post('/', async (req, res) => {
   } catch (err) {
     res.status(500).json({ ok: false, error: err?.message ?? 'Failed to send notification' });
   }
+});
+
+router.get('/', (req, res) => {
+  res.json({ ok: true, message: 'Use POST /api/sendnotification to send a push notification.' });
 });
 
 module.exports = router;
